@@ -1,0 +1,13 @@
+SOURCES=src/client.cc src/http/transport-curl.cc
+CC=cc
+CXX=g++
+PLATFORM=OS_LINUX
+PLATFORM_LDFLAGS=-pthread
+PLATFORM_LIBS=
+PLATFORM_CCFLAGS= -fno-builtin-memcmp -pthread -DOS_LINUX -lcurl 
+PLATFORM_CXXFLAGS=-std=c++0x -fno-builtin-memcmp -pthread -DOS_LINUX -fPIC -lcurl
+PLATFORM_SHARED_CFLAGS=
+PLATFORM_SHARED_EXT=
+PLATFORM_SHARED_LDFLAGS=-fPIC
+PLATFORM_SHARED_VERSIONED=
+
